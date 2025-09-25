@@ -16,6 +16,6 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 <p float="left">
-  <img src="assets/images/homeScreen.png" width="200" />
   <img src="assets/images/browserScreen.png" width="200" />
+  <img src="assets/images/homeScreen.png" width="200" />
 </p>
