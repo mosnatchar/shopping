@@ -97,7 +97,7 @@ class _BrowseTabState extends State<BrowseTab> {
           title: const Text(
             "Headphones",
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 16,
               fontWeight: FontWeight.w700,
               color: Colors.black,
             ),
@@ -160,36 +160,33 @@ class _BrowseTabState extends State<BrowseTab> {
                 ),
               ),
               SliverPadding(
-                padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                sliver: SliverList.list(
-                  children: [
-                    Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            '13’134 products',
-                            style: Theme.of(context).textTheme.titleLarge
-                                ?.copyWith(
-                                  color: Colors.grey.shade500,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 12,
-                                ),
+                padding: const EdgeInsets.fromLTRB(20, 0, 16, 8),
+                sliver: SliverToBoxAdapter(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text(
+                        "13’134 products",
+                        style: TextStyle(fontSize: 14, color: Colors.grey),
+                      ),
+                      Row(
+                        children: const [
+                          Text(
+                            "Sort by ",
+                            style: TextStyle(fontSize: 14, color: Colors.black),
                           ),
-                        ),
-                        TextButton(
-                          onPressed: () {},
-                          child: Text(
-                            'Sort by ',
+                          Text(
+                            "Relevance",
                             style: TextStyle(
-                              color: Colors.grey.shade500,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ),
-                      ],
-                    ),
-                  ],
+                          Icon(Icons.arrow_drop_down),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
               SliverPadding(
